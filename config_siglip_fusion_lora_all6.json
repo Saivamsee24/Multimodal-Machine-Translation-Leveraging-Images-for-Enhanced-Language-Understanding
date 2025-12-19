@@ -1,0 +1,54 @@
+{
+  "data_root": "/content/multi30k-dataset",
+  "image_dir": "flickr30k-images",
+  "save_dir": "/content/multimodal_translation_models_siglip_lora_fusion",
+  "drive_save_dir": "/content/drive/MyDrive/multimodal_translation_models_siglip_lora_fusion",
+  "max_length": 64,
+  "batch_size": 32,
+  "learning_rate": 3e-05,
+  "num_epochs": 6,
+  "patience": 3,
+  "min_delta": 0.5,
+  "use_amp": true,
+  "max_train_samples": 15000,
+  "max_val_samples": 200,
+  "warmup_steps": 100,
+  "max_grad_norm": 1.0,
+  "num_workers": 4,
+  "pin_memory": true,
+  "vision_model_name": "google/siglip-base-patch16-224",
+  "use_lora": true,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.1,
+  "lora_targets": [
+    "q_proj",
+    "v_proj"
+  ],
+  "directions": [
+    [
+      "en",
+      "de"
+    ],
+    [
+      "en",
+      "fr"
+    ],
+    [
+      "de",
+      "en"
+    ],
+    [
+      "de",
+      "fr"
+    ],
+    [
+      "fr",
+      "en"
+    ],
+    [
+      "fr",
+      "de"
+    ]
+  ]
+}
