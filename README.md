@@ -2,3 +2,7 @@ This project implements a multimodal machine translation (MMT) system that integ
 By combining a vision encoder (SigLIP) with a multilingual encoder–decoder (mBART-50) and applying LoRA-based fine-tuning, the model achieves consistent improvements over text-only baselines.
 
 The project is designed for research reproducibility, modular extension, and publication-ready experimentation.
+
+Dataset 
+Multi30k - https://github.com/multi30k/dataset
+ImageGuidedTranslationDataset - https://github.com/eBay/ImageGuidedTranslationDataset
