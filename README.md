@@ -4,6 +4,7 @@ By combining a vision encoder (SigLIP) with a multilingual encoder–decoder (mB
 The project is designed for research reproducibility, modular extension, and publication-ready experimentation.
 
 Dataset 
+
 Multi30k - https://github.com/multi30k/dataset
 
 ImageGuidedTranslationDataset - https://github.com/eBay/ImageGuidedTranslationDataset
